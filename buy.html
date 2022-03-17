@@ -1,0 +1,303 @@
+﻿<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW 2021/22 - Tickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="myCSS.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
+    <style>
+
+        .carousel {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .carousel-item {
+            z-index: -100;
+            height: 480px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+            .carousel-item:nth-child(1) {
+                background-image: url('https://mb.web.sapo.io/9644ccedd8923e117ecd2d8431295b77d06b4510.jpg');
+            }
+
+            .carousel-item:nth-child(2) {
+                background-image: url('https://staticp.0aos100.pt/posts/1633549094f1hamiltonvetteljpg_1980x600.jpg');
+            }
+
+            .carousel-item:nth-child(3) {
+                background-image: url('https://mb.web.sapo.io/20bec17326e461c884b7ec6ede85727b32cffb1e.jpg');
+            }
+
+            .carousel-item:nth-child(4) {
+                background-image: url('https://static.globalnoticias.pt/tsf/image.jpg?brand=TSF&type=generate&guid=1fb55adf-d0a0-451a-bfa5-a78033ecb357');
+            }
+
+        body {
+            background-image: url("https://www.f1mania.net/wp-content/uploads/2021/07/F1-2022-SILVERSTONE-02.jpg");
+            background-size: cover;
+
+        }
+
+        #navtop {
+            position: absolute;
+            background: transparent !important;
+            width: 100%;
+            z-index: 10;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-link {
+            color: #fff !important;
+            margin-right: 5px;
+        }
+
+            .nav-link:hover {
+                color: rgba(216, 216, 216) !important;
+            }
+
+        #login {
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding: 0.2rem 1rem !important;
+            line-height: 30px;
+        }
+
+            #login:hover {
+                background-color: #c82424 !important;
+                border: 2px solid #c82424;
+            }
+
+        #signup {
+            border: 2px solid #c82424;
+            background-color: #c82424;
+            border-radius: 20px;
+            padding: 0.2rem 1rem !important;
+            line-height: 30px;
+        }
+
+            #signup:hover {
+                background-color: #fff !important;
+                border: 2px solid #fff;
+                color: #c82424 !important;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="formula1_logo.png" alt="logo" style="width: 50px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="drivers.html">
+                            <i class="fa fa-flag-checkered"></i>
+                            Drivers
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cogs" aria-hidden="true"></i> Constructors
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="constructors2.html"><i class="fa fa-cog" aria-hidden="true"></i> All constructors</a></li>
+                            <li><a class="dropdown-item" href="constructors.html">Most recent constructors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="circuits.html"><i class="fa fa-road" aria-hidden="true"></i> Circuits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="season.html"><i class="fa fa-calendar-o" aria-hidden="true"></i> Seasons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="champions.html"><i class="fa fa-trophy" aria-hidden="true"></i> Champions</a>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-plus"></i> More
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" aria-current="page" href="countries.html"><i class="fa fa-globe" aria-hidden="true"></i> Countries</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" aria-current="page" href="info.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Info</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item" style="display: block">
+
+                        <a class="nav-link" href="buy.html"><i class="fa fa-shopping-cart" aria-hidden="false"></i> Tickets</a>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Working Area -->
+    <div class="areatrab">
+
+        <div class="container" style="width: 50%; height: 50%">
+            <div id="pag1" class="d-block col-md-12" style="margin: 0 auto">
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <div>
+                            <input class="form-control" id="searchcircuit" placeholder="Search circuit">
+                        </div>
+                        <div>
+                            <div class="d-none text-danger col-form-label" id="circuiterror"><i class="fa fa-exclamation-triangle"></i> This space needs to be filled (Choose a circuit).</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="text" id="name" class="form-control" placeholder="First name" aria-label="First name">
+                        <div class="d-none text-danger col-form-label" id="namerror"><i class="fa fa-exclamation-triangle"></i> This space needs to be filled (Min: 3 characters).</div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="lastname" class="form-control" placeholder="Last name" aria-label="Last name">
+                        <div class="d-none text-danger col-form-label" id="lasterror"><i class="fa fa-exclamation-triangle"></i> This space needs to be filled (Min: 3 characters).</div>
+                    </div>
+                    <div class="col-md-12">
+                        <textarea placeholder="Adress" name="Morada" id="adress" class="form-control" rows="4"></textarea>
+                        <div class="d-none text-danger col-form-label" id="adresserror"><i class="fa fa-exclamation-triangle"></i> This space needs to be filled (Min: 3 words).</div>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <input id="city" type="text" class="form-control" placeholder="City">
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <input id="cep" type="text" class="form-control" placeholder="Zip Code">
+                    </div>
+                    <div class="col-12">
+                        <input type="button" name="submitBtn" value="Next" class="btn btn-danger" onclick="validate()">
+                    </div>
+                </form>
+            </div>
+            <div id="pag1conf" class="d-none col-md-12" style="margin: 0 auto">
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <select id="inputday" class="form-select">
+                            <option value="0" disabled="" selected="">Choose the day</option>
+                            <option value="1">Friday</option>
+                            <option value="2">Saturday-Sunday</option>
+                            <option value="3">Friday-Sunday</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12">
+                        <select id="locais" class="form-select">
+                            <option value="0" disabled="" selected="">Options Available</option>
+                            <option value="214.94">Main Grandstand</option>
+                            <option value="153.97">Batelco</option>
+                            <option value="260.56">Turn 1 Grandstand</option>
+                            <option value="1">Hospitality Tent</option>
+                            <option value="153.97">University Grandstand</option>
+                            <option value="153.97">Victory Grandstand</option>
+
+                        </select>
+
+                    </div>
+                    <div class="col-md-12">
+                        <input id="quantidade" type="number" min="0" class="form-control" placeholder="Quantity">
+
+                    </div>
+
+
+                    <div class="col-md-6 d-block" id="botao">
+                        <input type="button" name="submitBtn" value="Next" class="btn btn-danger" onclick="buy()">
+
+                    </div>
+                    <div class="col-md-6 d-none" id="buy">
+                        <input type="button" name="submitBtn" value="Buy" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label>Price</label><output id="valor" type="number" class="form-control">0€</output>
+
+                    </div>
+                </form>
+
+
+                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog  ">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <h5 class="modal-title" id="exampleModalLabel">Almost there<i class="bi bi-check2-circle"></i></h5>
+                                <a href="index.html" type="button" class="btn-close" aria-label="Close"></a>
+                            </div>
+                            <div class="modal-body">
+                                Acess your email to complete payment procedure
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="progress">
+                <div id="progress" class="progress-bar bg-danger w-0" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- End of Working Area -->
+    <nav class="navbar navbar-dark bg-dark bottom mt-4 fixed-bottom">
+        <div class="container small">
+            <div class="navbar-text">©  Introdução as Tecnologias Web - 2021/22</div>
+            <div class="navbar-text">By <a href="mailto:bernardopinto@ua.pt" class="text-decoration-none text-muted">Bernardo Pinto</a> & <a href="mailto:mendes.j@ua.pt" class="text-decoration-none text-muted">José Mendes</a></div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.ua.pt" class="nav-link">Universidade de Aveiro</a></div>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src="buy.js"></script>
+
+
+
+</body>
+</html>

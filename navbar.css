@@ -1,0 +1,125 @@
+﻿*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px
+}
+
+.img1 {
+    width: 100%;
+}
+
+#1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    padding: 0 1.5rem;
+}
+
+.blog-post {
+    margin-bottom: 20px
+    width: 100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: #fff;
+    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+}
+
+
+.blog-post__img {
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+}
+
+    .blog-post__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: .8rem;
+    }
+
+    .blog-post__img::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,.05);
+        border-radius: .8rem;
+    }
+
+.blog-post__date span {
+    display: block;
+    color: rgba(0,0,0,.5);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.blog-post__title {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    
+}
+
+
+.blog-post__text {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,.7);
+}
+
+.blog-post__cta {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #ff0000 0%, #fff 100%);
+    border-radius: .8rem;
+}
+
+
+
+
+<div class="blog-post" >
+<div class="blog-post__img" >
+<img class="img1" src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/WinterJanuary/GP2106_072719_J5A2633.jpg.transform/9col/image.jpg" / >
+
+</div >
+<div class="blog-post__info" >
+<div class="blog-post__date" >
+<span > Sunday</span >
+<span > January 26 2022</span >
+</div >
+<h1 class="blog-post__title" > Aston Martin are the first team to have announced the launch date for their 2022 Formula 1 car, the AMR22. </h1 >
+<p class="blog-post__text" >
+The team, which finished seventh in 2021, are being led into a new era by owner Lawrence Stroll. The Canadian businessman has grand plans for his outfit and aims to take F1 by storm in the future.
+<br / >
+Aston Martin's 2022 Formula 1 car will be launched on February 10, with the event to be streamed online from Aston Martin's Gaydon headquarters.
+<br / >
+Four-time F1 champion Sebastian Vettel will partner Lance Stroll for a second season running, while there has been a change at the top – Otmar Szafnauer having left his Team Principal role.
+</p >
+<a href="#" class="blog-post__cta" > Read More</a >
+
+</div >
+</div >

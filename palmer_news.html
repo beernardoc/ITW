@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>News</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-image: url('background image.jpg')
+        }
+
+        #img:hover {
+            transform: scale(1.2)
+        }
+    </style>
+</head>
+<body>
+    <!---NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="formula1_logo.png" alt="logo" style="width: 50px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="drivers.html">
+                            <i class="fa fa-flag-checkered"></i>
+                            Drivers
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cogs" aria-hidden="true"></i> Constructors
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="constructors2.html"><i class="fa fa-cog" aria-hidden="true"></i> All constructors</a></li>
+                            <li><a class="dropdown-item" href="constructors.html">Most recent constructors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="circuits.html"><i class="fa fa-road" aria-hidden="true"></i> Circuits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="season.html"><i class="fa fa-calendar-o" aria-hidden="true"></i> Seasons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="champions.html"><i class="fa fa-trophy" aria-hidden="true"></i> Champions</a>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-plus"></i> More
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" aria-current="page" href="countries.html"><i class="fa fa-globe" aria-hidden="true"></i> Countries</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" aria-current="page" href="info.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Info</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item" style="display: block">
+
+                        <a class="nav-link" href="buy.html"><i class="fa fa-shopping-cart" aria-hidden="false"></i> Tickets</a>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Workplace-->
+    <div class="container">
+
+        <div class="row mt-3" style="text-align: center">
+            <h1 style="color: #b01a1a">PALMER: Whatever you thought of the Abu Dhabi outcome, Verstappen was a worthy champion in 2021</h1>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/2021AbuDhabiGPmanualadds/Post/GettyImages-1358592409.jpg.transform/9col/image.jpg" style="width: 650px; border: 5px #b01a1a solid; padding: 0 0 0 0; border-radius: 10px" />
+            </div>
+
+            <div class="col-md-6" style="float: right">
+                <h2 style="color: #b01a1a">Other news:</h2>
+
+                <div class="card mb-6 border-danger" style="max-width: 100%; margin-bottom:20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5); border-radius: 5px">
+                    <div class="row g-0">
+                        <div class="col-md-4" style="overflow: hidden">
+                            <a href="astonMartin_news.html">
+                                <img id="img" src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/WinterJanuary/GP2106_072719_J5A2633.jpg.transform/9col/image.jpg" class="img-fluid rounded-start" style="height: 100%;width: 100%; transition: all 1.1s" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Get your diaries ready: Aston Martin are the first team to have announced the launch date for their 2022 Formula 1 car, the AMR22.</b></h5>
+
+
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-6 border-danger" style="max-width: 100%; margin-bottom:20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5); border-radius: 5px">
+                    <div class="row g-0">
+                        <div class="col-md-4" style="overflow: hidden">
+                            <a href="newCars_news.html">
+                                <img id="img" src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/2021BritishManualAdds/2022CarImages/Comparisons/2021%20Car%20vs%202022%20Car%2016x9%20FRONT.jpg.transform/9col/image.jpg" class="img-fluid rounded-start" style="height: 100%;width: 100%; transition: all 1.1s" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>How the front wing on the all-new 2022 cars has been designed to improve overtaking</b>    </h5>
+
+
+                                <p class="card-text"><small class="text-muted">Last updated 40 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 mb-4" style="color: white">
+                <p>
+                    <b>
+                        The dramatic late Safety Car in Abu Dhabi ended up deciding the championship, and the manner it was brought in has sparked much
+                        debate and controversy at the end of a highly dramatic season.
+                    </b>
+                </p>
+
+                <p>
+                    On the one hand we had the mouth-watering finale that Formula 1 has likely never seen before – the championship being decided with two
+                    drivers battling for Grand Prix victory on the final lap of the season, with the winner being crowned champion. All of this including a brilliant
+                    bout of wheel-to-wheel scrapping lasting a third of a lap, with the cars separated by paper widths on a few occasions.
+                </p><br />
+
+                <p>
+                    On the other hand, the fallout afterwards has somewhat overshadowed this exhilarating final lap, with Mercedes lodging protests to the FIA about
+                    how it conducted its own procedures.
+                </p><br />
+
+                <p>
+                    We wanted this championship to be decided by fantastic wheel-to-wheel action and not in the stewards room, but in typical 2021 fashion it
+                    looks like it has been decided by both in the end.
+                </p><br />
+
+                <p>
+                    There are arguments each way on the Safety Car incident, but whatever you think of it there’s no getting away from the fact that Max Verstappen
+                    is a deserving champion in 2021.
+                </p><br />
+
+                <p>
+                    Verstappen and Lewis Hamilton have driven two of the most fantastic seasons this year, spurred on by one another, each inching their way to
+                    perfection in the most intense of years. Either one of them would have been worthy winners in Abu Dhabi.
+                </p><br />
+
+                <p>
+                    Mercedes aren’t happy with the result, but for once in this bitter rivalry, it’s nothing against Verstappen or Red Bull, but rather the
+                    intricacies of regulations.
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <nav class="navbar navbar-dark bg-dark bottom mt-4 bottom">
+        <div class="container small">
+            <div class="navbar-text">©  Introdução as Tecnologias Web - 2021/22</div>
+            <div class="navbar-text">By <a href="mailto:bernardopinto@ua.pt" class="text-decoration-none text-muted">Bernardo Pinto</a> & <a href="mailto:mendes.j@ua.pt" class="text-decoration-none text-muted">José Mendes</a></div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.ua.pt" class="nav-link">Universidade de Aveiro</a></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>
